@@ -143,3 +143,12 @@ p {
   background: rgba(7, 106, 230, 0.15);
   color: inherit;
 }
+
+svg path {
+  fill: currentColor;
+}
+
+svg rect,
+svg circle {
+  fill: none;
+}
