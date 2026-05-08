@@ -1,0 +1,145 @@
+/* ============================================================
+   Milwaukee Tool — Claire Design System
+   index.css — Global styles + CSS custom properties
+   Token names mirror Figma Color · Semantic collection
+   ============================================================ */
+
+/* ── Fonts ─────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('/fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Roman.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('/fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('/fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-BlkEx.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue LT Pro';
+  src: url('/fonts/helvetica-neue-lt-pro/HelveticaNeueLTPro-MdCn.woff2') format('woff2');
+  font-weight: 500;
+  font-style: condensed;
+}
+
+
+/* ── Claire tokens — Task mode (default) ───────────────────── */
+/* Mirrors Figma Color · Semantic / Task focused mode           */
+:root {
+  /* Surfaces */
+  --surface-default:        #FFFFFF;
+  --surface-page:           #F1F3F6;
+  --surface-subtle:         #F8F9FA;
+
+  /* Text */
+  --text-primary:           #262D37;   /* Neutral · Task/900 */
+  --text-secondary:         #4B5A6E;   /* Neutral · Task/700 */
+  --text-disabled:          #5E718A;   /* Neutral · Task/600 */
+  --text-inverse:           #FFFFFF;
+
+  /* Borders */
+  --border-default:         #D8DDE5;   /* Neutral · Task/300 */
+  --border-subtle:          #BAC3D0;   /* Neutral · Task/400 */
+  --border-field:           #7588A1;   /* Neutral · Task/500 */
+
+  /* Action — Task mode primary (blue) */
+  --action-primary:         #076AE6;
+  --action-primary-hover:   #0052B4;
+  --action-primary-pressed: #003090;
+  --action-primary-text:    #FFFFFF;
+  --action-disabled:        #F1F3F6;   /* Neutral · Task/100 */
+
+  /* Focus — always Interactive/focus, never red */
+  --focus:                  #076AE6;
+
+  /* Status */
+  --error:                  #DC2626;
+  --error-bg:               #FEF2F2;
+  --warning:                #F59E0B;
+  --warning-bg:             #FFFBEB;
+  --success:                #059669;
+  --success-bg:             #ECFDF5;
+  --info:                   #0041B3;
+  --info-bg:                #E6F0FC;
+
+  /* Status neutral */
+  --status-neutral:         #D8DDE5;
+  --status-neutral-light:   #ECF0F6;
+  --status-neutral-strong:  #848A93;
+
+  /* Sidebar / action rail */
+  --sidebar:                #384453;   /* Neutral · Task/800 */
+
+  /* Typography */
+  --font-family:            'Helvetica Neue LT Pro', Helvetica, Arial, sans-serif;
+
+  /* Base */
+  font-family:              var(--font-family);
+  font-size:                14px;
+  line-height:              1;
+  color:                    var(--text-primary);
+  background:               var(--surface-page);
+  font-synthesis:           none;
+  text-rendering:           optimizeLegibility;
+  -webkit-font-smoothing:   antialiased;
+  -moz-osx-font-smoothing:  grayscale;
+}
+
+
+/* ── Brand mode overrides ───────────────────────────────────── */
+/* Apply .brand-mode to <html> or a top-level wrapper           */
+/* Mirrors Figma Color · Semantic / Brand focused mode          */
+.brand-mode {
+  /* Surfaces — .COM OneKey warm grey */
+  --surface-page:           #F6F7F8;   /* Neutral · Brand/50  */
+  --surface-subtle:         #F6F7F8;   /* Neutral · Brand/50  */
+
+  /* Text — warm grey scale */
+  --text-primary:           #343434;   /* Neutral · Brand/700 */
+  --text-secondary:         #747476;   /* Neutral · Brand/500 */
+  --text-disabled:          #747476;   /* Neutral · Brand/500 */
+
+  /* Borders — warm grey scale */
+  --border-default:         #DDDDDD;   /* Neutral · Brand/300 */
+  --border-subtle:          #ABACAD;   /* Neutral · Brand/400 */
+  --border-field:           #747476;   /* Neutral · Brand/500 */
+
+  /* Action — Brand mode primary (Milwaukee red) */
+  --action-primary:         #DB011C;
+  --action-primary-hover:   #AD0015;
+  --action-primary-pressed: #7A000F;
+  --action-disabled:        #F0F0F0;   /* Neutral · Brand/100 */
+
+  /* Sidebar */
+  --sidebar:                #343434;   /* Neutral · Brand/700 */
+}
+
+
+/* ── Reset ──────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-primary);
+}
+
+p {
+  margin: 0;
+}
+
+/* ── Selection ──────────────────────────────────────────────── */
+::selection {
+  background: rgba(7, 106, 230, 0.15);
+  color: inherit;
+}
