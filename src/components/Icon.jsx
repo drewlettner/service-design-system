@@ -125,8 +125,6 @@ import OctagonExclamationRegular  from '../assets/icons/octagon-exclamation-regu
 import OctagonExclamationSolid    from '../assets/icons/octagon-exclamation-solid.svg?react';
 import ShieldCheckRegular         from '../assets/icons/shield-check-regular.svg?react';
 import ShieldCheckSolid           from '../assets/icons/shield-check-solid.svg?react';
-import ShieldQuestionRegular      from '../assets/icons/shield-question-regular.svg?react';
-import ShieldQuestionSolid        from '../assets/icons/shield-question-solid.svg?react';
 import ShieldTimesRegular         from '../assets/icons/shield-times-regular.svg?react';
 import ShieldTimesSolid           from '../assets/icons/shield-times-solid.svg?react';
 import StarSharpRegular           from '../assets/icons/star-sharp-regular.svg?react';
@@ -159,9 +157,6 @@ import SquareMinusRegular         from '../assets/icons/square-minus-regular.svg
 import SquareMinusSolid           from '../assets/icons/square-minus-solid.svg?react';
 
 // ── Numbers (solid only) ──────────────────────────────────────
-import Number1Solid               from '../assets/icons/number-1-solid.svg?react';
-import Number2Solid               from '../assets/icons/number-2-solid.svg?react';
-import Number3Solid               from '../assets/icons/number-3-solid.svg?react';
 
 // ── People & places ───────────────────────────────────────────
 import CircleUserRegular          from '../assets/icons/circle-user-regular.svg?react';
@@ -180,7 +175,6 @@ import UserMagnifyingGlassRegular from '../assets/icons/user-magnifying-glass-re
 import UserMagnifyingGlassSolid   from '../assets/icons/user-magnifying-glass-solid.svg?react';
 import UsersRegular               from '../assets/icons/users-regular.svg?react';
 import UsersSolid                 from '../assets/icons/users-solid.svg?react';
-import UsersSearchSolid           from '../assets/icons/users-search-solid.svg?react';
 
 // ── Communication ─────────────────────────────────────────────
 import BellRegular                from '../assets/icons/bell-regular.svg?react';
@@ -191,7 +185,6 @@ import CommentsRegular            from '../assets/icons/comments-regular.svg?rea
 import CommentsSolid              from '../assets/icons/comments-solid.svg?react';
 import EnvelopeRegular            from '../assets/icons/envelope-regular.svg?react';
 import EnvelopeSolid              from '../assets/icons/envelope-solid.svg?react';
-import FacebookMessengerSolid     from '../assets/icons/facebook-messenger-solid.svg?react';
 import PaperPlaneRegular          from '../assets/icons/paper-plane-regular.svg?react';
 import PaperPlaneSolid            from '../assets/icons/paper-plane-solid.svg?react';
 import PhoneRegular               from '../assets/icons/phone-regular.svg?react';
@@ -208,8 +201,6 @@ import ClipboardListRegular       from '../assets/icons/clipboard-list-regular.s
 import ClipboardListSolid         from '../assets/icons/clipboard-list-solid.svg?react';
 import CloudArrowUpRegular        from '../assets/icons/cloud-arrow-up-regular.svg?react';
 import CloudArrowUpSolid          from '../assets/icons/cloud-arrow-up-solid.svg?react';
-import FileDollarRegular          from '../assets/icons/file-dollar-regular.svg?react';
-import FileDollarSolid            from '../assets/icons/file-dollar-solid.svg?react';
 import FileLinesRegular           from '../assets/icons/file-lines-regular.svg?react';
 import FileLinesSolid             from '../assets/icons/file-lines-solid.svg?react';
 import FilePngRegular             from '../assets/icons/file-png-regular.svg?react';
@@ -250,7 +241,6 @@ import ShopRegular                from '../assets/icons/shop-regular.svg?react';
 import ShopSolid                  from '../assets/icons/shop-solid.svg?react';
 import ToolboxRegular             from '../assets/icons/toolbox-regular.svg?react';
 import ToolboxSolid               from '../assets/icons/toolbox-solid.svg?react';
-import ToteBulkOrder              from '../assets/icons/tote-bulk-order.svg?react';
 import TruckRegular               from '../assets/icons/truck-regular.svg?react';
 import TruckSolid                 from '../assets/icons/truck-solid.svg?react';
 import TruckClockRegular          from '../assets/icons/truck-clock-regular.svg?react';
@@ -289,11 +279,6 @@ import WrenchRegular              from '../assets/icons/wrench-regular.svg?react
 import WrenchSolid                from '../assets/icons/wrench-solid.svg?react';
 
 // ── Social / brand (no style variants) ───────────────────────
-import Facebook                   from '../assets/icons/facebook.svg?react';
-import Instagram                  from '../assets/icons/instagram.svg?react';
-import Interac                    from '../assets/icons/interac.svg?react';
-import XSocial                    from '../assets/icons/x-social.svg?react';
-import Youtube                    from '../assets/icons/youtube.svg?react';
 
 // ── Icon map ──────────────────────────────────────────────────
 const icons = {
@@ -363,7 +348,6 @@ const icons = {
   'circle-up':                    { regular: CircleUpRegular,               solid: CircleUpSolid },
   'octagon-exclamation':          { regular: OctagonExclamationRegular,     solid: OctagonExclamationSolid },
   'shield-check':                 { regular: ShieldCheckRegular,            solid: ShieldCheckSolid },
-  'shield-question':              { regular: ShieldQuestionRegular,         solid: ShieldQuestionSolid },
   'shield-times':                 { regular: ShieldTimesRegular,            solid: ShieldTimesSolid },
   'star-sharp':                   { regular: StarSharpRegular,              solid: StarSharpSolid },
   'triangle-exclamation':         { regular: TriangleExclamationRegular,    solid: TriangleExclamationSolid },
@@ -382,11 +366,6 @@ const icons = {
   'square-check':                 { regular: SquareCheckRegular,            solid: SquareCheckSolid },
   'square-minus':                 { regular: SquareMinusRegular,            solid: SquareMinusSolid },
 
-  // Numbers — solid only
-  'number-1':                     { regular: Number1Solid,                  solid: Number1Solid },
-  'number-2':                     { regular: Number2Solid,                  solid: Number2Solid },
-  'number-3':                     { regular: Number3Solid,                  solid: Number3Solid },
-
   // People & places
   'circle-user':                  { regular: CircleUserRegular,             solid: CircleUserSolid },
   'location-crosshairs':          { regular: LocationCrosshairsRegular,     solid: LocationCrosshairsSolid },
@@ -396,14 +375,12 @@ const icons = {
   'user-headset':                 { regular: UserHeadsetRegular,            solid: UserHeadsetSolid },
   'user-magnifying-glass':        { regular: UserMagnifyingGlassRegular,    solid: UserMagnifyingGlassSolid },
   'users':                        { regular: UsersRegular,                  solid: UsersSolid },
-  'users-search':                 { regular: UsersSearchSolid,              solid: UsersSearchSolid },
 
   // Communication
   'bell':                         { regular: BellRegular,                   solid: BellSolid },
   'comment-dollar':               { regular: CommentDollarRegular,          solid: CommentDollarSolid },
   'comments':                     { regular: CommentsRegular,               solid: CommentsSolid },
   'envelope':                     { regular: EnvelopeRegular,               solid: EnvelopeSolid },
-  'facebook-messenger':           { regular: FacebookMessengerSolid,        solid: FacebookMessengerSolid },
   'paper-plane':                  { regular: PaperPlaneRegular,             solid: PaperPlaneSolid },
   'phone':                        { regular: PhoneRegular,                  solid: PhoneSolid },
   'phone-arrow-down-left':        { regular: PhoneArrowDownLeftRegular,     solid: PhoneArrowDownLeftSolid },
@@ -414,7 +391,6 @@ const icons = {
   'clipboard-list':               { regular: ClipboardListRegular,          solid: ClipboardListSolid },
   'cloud-arrow-up':               { regular: CloudArrowUpRegular,           solid: CloudArrowUpSolid },
   'file':                         { regular: FileRegular,                   solid: FileSolid },
-  'file-dollar':                  { regular: FileDollarRegular,             solid: FileDollarSolid },
   'file-lines':                   { regular: FileLinesRegular,              solid: FileLinesSolid },
   'file-png':                     { regular: FilePngRegular,                solid: FilePngSolid },
   'image':                        { regular: ImageRegular,                  solid: ImageSolid },
@@ -435,7 +411,6 @@ const icons = {
   'receipt':                      { regular: ReceiptRegular,                solid: ReceiptSolid },
   'shop':                         { regular: ShopRegular,                   solid: ShopSolid },
   'toolbox':                      { regular: ToolboxRegular,                solid: ToolboxSolid },
-  'tote-bulk-order':              { regular: ToteBulkOrder,                 solid: ToteBulkOrder },
   'truck':                        { regular: TruckRegular,                  solid: TruckSolid },
   'truck-clock':                  { regular: TruckClockRegular,             solid: TruckClockSolid },
   'truck-fast':                   { regular: TruckFastRegular,              solid: TruckFastSolid },
@@ -457,12 +432,6 @@ const icons = {
   'trash-can':                    { regular: TrashAltRegular,               solid: TrashAltSolid },
   'wrench':                       { regular: WrenchRegular,                 solid: WrenchSolid },
 
-  // Social / brand — no style variants
-  'facebook':                     { regular: Facebook,                      solid: Facebook },
-  'instagram':                    { regular: Instagram,                     solid: Instagram },
-  'interac':                      { regular: Interac,                       solid: Interac },
-  'x-social':                     { regular: XSocial,                       solid: XSocial },
-  'youtube':                      { regular: Youtube,                       solid: Youtube },
 };
 
 // ── Icon component ────────────────────────────────────────────
