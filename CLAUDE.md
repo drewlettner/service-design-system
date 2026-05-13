@@ -28,6 +28,9 @@ One component library. Two modes. Mode is set at the theme level — never via d
 - Do not mix FA Sharp Solid and Regular within the same control.
 - Brand mode = sharp corners (`0px`). Task mode = rounded (`4px`). Never swap.
 - "Primary" in token names refers to importance, not hue.
+- The Milwaukee Tool logo never appears on a blue background in any mode.
+- The white Milwaukee logo is used exclusively on the Brand mode red topbar.
+- The red Milwaukee logo is used exclusively on the Task mode white topbar.
 
 ---
 
@@ -49,6 +52,7 @@ Components reference roles, never primitives or raw hex.
 | Subtle border | `color/border/subtle` |
 | Field border | `color/border/field` |
 | Focus | `color/focus` — always `#076AE6` |
+| Topbar background | `color/chrome/topbar` |
 
 ### Mode Split — Key Values
 
@@ -59,12 +63,14 @@ Components reference roles, never primitives or raw hex.
 | `text/primary` | `#343434` | `#262D37` |
 | `text/secondary` | `#747476` | `#4B5A6E` |
 | `text/disabled` | `#747476` | `#5E718A` |
-| `border/default` | `#DDDDDD` | `#D8DDE5` |
+| `border/default` | `#ABACAD` | `#9EACBD` |
+| `border/subtle` | `#DDDDDD` | `#BAC3D0` |
 | `border/field` | `#747476` | `#7588A1` |
 | `action/primary` | `#DB011C` | `#076AE6` |
 | `action/primary/hover` | `#AD0015` | `#0052B4` |
 | `action/primary/pressed` | `#7A000F` | `#003090` |
 | `sidebar` | `#343434` | `#384453` |
+| `chrome/topbar` | `#DB011C` | `#FFFFFF` |
 
 ### Neutral Scales
 Brand mode uses the Milwaukee .COM / OneKey warm grey scale.
