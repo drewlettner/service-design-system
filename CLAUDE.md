@@ -61,7 +61,7 @@ Components reference roles, never primitives or raw hex.
 | `surface/page` | `#F6F7F8` | `#F1F3F6` |
 | `surface/subtle` | `#F6F7F8` | `#F8F9FA` |
 | `text/primary` | `#343434` | `#262D37` |
-| `text/secondary` | `#747476` | `#4B5A6E` |
+| `text/secondary` | `#515355` | `#4B5A6E` |
 | `text/disabled` | `#747476` | `#5E718A` |
 | `border/default` | `#ABACAD` | `#9EACBD` |
 | `border/subtle` | `#DDDDDD` | `#BAC3D0` |

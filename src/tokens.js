@@ -3,7 +3,7 @@
 // Claire Design System v2
 // Shared infrastructure for Brand + Task modes
 // Product-agnostic naming convention
-// Synced with WIP Library primitives — April 2026
+// Synced with WIP Library primitives — May 2026
 // ============================================================
 
 
@@ -125,8 +125,8 @@ export const primitives = {
     50:  '#F8F9FA',
     100: '#F1F3F6',
     200: '#ECF0F6',
-    300: '#D8DDE5',
-    400: '#BAC3D0',
+    300: '#BAC3D0',
+    400: '#9EACBD',
     500: '#7588A1',
     600: '#5E718A',
     700: '#4B5A6E',
@@ -188,11 +188,11 @@ export const colorBrand = {
   // Neutrals — Neutral · Brand scale
   surfacePage:    primitives.neutralBrand[50],   // #F6F7F8
   surfaceSubtle:  primitives.neutralBrand[50],   // #F6F7F8
-  borderDefault:  primitives.neutralBrand[300],  // #DDDDDD
-  borderSubtle:   primitives.neutralBrand[400],  // #ABACAD
+  borderDefault:  primitives.neutralBrand[400],  // #ABACAD
+  borderSubtle:   primitives.neutralBrand[300],  // #DDDDDD
   borderField:    primitives.neutralBrand[500],  // #747476
   textPrimary:    primitives.neutralBrand[700],  // #343434
-  textSecondary:  primitives.neutralBrand[500],  // #747476
+  textSecondary:  primitives.neutralBrand[600],  // #515355
   textDisabled:   primitives.neutralBrand[500],  // #747476
   actionDisabled: primitives.neutralBrand[100],  // #F0F0F0
 
@@ -219,8 +219,8 @@ export const colorTask = {
   // Neutrals — Neutral · Task scale
   surfacePage:    primitives.neutralTask[100],   // #F1F3F6
   surfaceSubtle:  primitives.neutralTask[50],    // #F8F9FA
-  borderDefault:  primitives.neutralTask[300],   // #D8DDE5
-  borderSubtle:   primitives.neutralTask[400],   // #BAC3D0
+  borderDefault:  primitives.neutralTask[400],   // #9EACBD
+  borderSubtle:   primitives.neutralTask[300],   // #BAC3D0
   borderField:    primitives.neutralTask[500],   // #7588A1
   textPrimary:    primitives.neutralTask[900],   // #262D37
   textSecondary:  primitives.neutralTask[700],   // #4B5A6E
