@@ -1,0 +1,75 @@
+# Milwaukee Service UX — Look & Feel
+
+## Experience Philosophy
+
+Operational clarity over visual novelty.
+
+Interfaces should feel:
+- trustworthy
+- calm
+- structured
+- industrial
+- low-friction
+- confidence-building
+
+The system should guide users progressively without overwhelming them.
+
+---
+
+## Interaction Tone
+
+- Direct, not robotic
+- Helpful, not conversational
+- Informational, not alarming
+- Utility-first, not marketing-first
+
+---
+
+## Visual Characteristics
+
+- Neutral surfaces
+- Restrained use of color
+- Blue = interaction/action
+- Red = brand or critical state only
+- Borders clarify structure, not decoration
+- Cards represent service objects and states
+
+---
+
+## UX Patterns
+
+- Progressive disclosure preferred over upfront complexity
+- Optional paths should remain visually secondary
+- Service escalation should occur contextually
+- Important financial disclosures should feel informative, not punitive
+
+---
+
+## Mobile Philosophy
+
+- Prioritize clarity over density
+- Stack vertically when needed
+- Preserve touch confidence
+- Reduce accidental interaction risk
+- Use bottom sheets for contextual actions
+
+---
+
+## Service Object Model
+
+Products, repairs, calibrations, and estimates should behave as modular service objects that can scale across:
+- eService
+- OnePoint
+- Cart/checkout
+- Future workflows
+
+---
+
+## Avoid
+
+- Overly loud warning states
+- Decorative enterprise UI
+- Over-styled cards
+- Dense action clusters
+- Hidden critical information
+- Abrupt escalation patterns

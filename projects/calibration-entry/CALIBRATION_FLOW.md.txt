@@ -1,0 +1,187 @@
+# CALIBRATION_FLOW.md
+
+# Calibration Priority Flow
+
+## Summary
+
+Introduces Calibration as a dedicated support/service pathway instead of embedding calibration within the repair intake flow.
+
+The updated flow improves service clarity, separates calibration from repair intent, and introduces optional repair escalation through progressive disclosure patterns.
+
+This proposal intentionally limits v1 scope to service confirmation while preserving the existing downstream shipping flow temporarily. Cart and checkout concepts are planned for future exploration.
+
+---
+
+# UX Goals
+
+- Clarify calibration as a standalone service
+- Reduce accidental repair-flow entry
+- Improve service transparency
+- Introduce optional repair escalation
+- Reduce negative sentiment around repair estimates
+- Establish scalable service-type architecture
+
+---
+
+# Flow Map
+
+## Entry
+Support Options
+→ Start Calibration
+
+---
+
+## Step 1 — Calibration Intake
+
+User enters:
+- Serial number
+
+Page includes:
+- Calibration fee disclosure
+- Calibration service disclaimer
+- Optional repair escalation entry point
+
+Primary CTA:
+- Confirm service details
+
+---
+
+## Step 2 — Optional Repair Escalation
+
+If user selects:
+- Add repairs
+
+Expanded flow allows:
+- Problem description selection
+- Included item selection
+- Reference ID entry
+- Repair estimate disclosure
+
+Repair escalation is:
+- Optional
+- Contextual
+- Nested within calibration workflow
+
+---
+
+## Step 3 — Confirm Service Details
+
+### Calibration Only
+Displays:
+- Calibration service summary
+- Fee disclosure
+- Continue to shipping flow
+
+### Calibration + Repair
+Displays:
+- Calibration summary
+- Repair summary
+- Optional repair details
+- LMR estimate container
+
+Primary CTA:
+- Continue
+
+---
+
+## Existing Downstream Flow (Temporary)
+
+Current downstream shipping flow remains unchanged for v1.
+
+Future-state transactional concepts may include:
+- Add to cart
+- Multi-tool service management
+- Checkout/payment flow
+
+These concepts are intentionally excluded from current implementation scope.
+
+---
+
+# Key UX Decisions
+
+- Warranty pre-check removed from current proposal based on stakeholder feedback
+- Repair escalation moved later in flow
+- “Add repairs” treated as optional progressive disclosure
+- LMR visually diffused to reduce hesitation and negative sentiment
+- Calibration + repair represented as separate service summaries
+- Mobile maintains disclosure structure despite reduced density
+- Existing downstream shipping flow reused intentionally to constrain v1 scope
+
+---
+
+# New / Reused Patterns
+
+- Service summary cards
+- Informational estimate containers
+- Nested escalation sections
+- Conditional service disclosures
+- Service-type multi-card stacking
+- Tool action drawers/popovers
+- Progressive disclosure repair intake
+
+---
+
+# Responsive Behavior
+
+## Desktop
+- Lower-emphasis disclosure structure
+- More integrated spacing rhythm
+- Optional escalation remains visually secondary
+
+## Mobile
+- Stronger disclosure affordances
+- Increased tap-region clarity
+- Bottom-sheet interaction patterns for contextual actions
+- Expanded sections use stronger visual separation where necessary
+
+---
+
+# Interaction Philosophy
+
+- Calibration should feel deterministic and straightforward
+- Repair escalation should feel optional and contextual
+- Financial communication should feel informative, not alarming
+- Optional complexity should remain progressively disclosed
+- Service summaries should behave as modular service objects
+
+---
+
+# Operational / System Dependencies
+
+- OnePoint currently infers calibration through repair problem chips
+- New flow introduces explicit service-type handling
+- Cart/checkout not yet supported
+- Shipping flow remains temporarily unchanged
+- LMR messaging may require additional stakeholder/legal alignment
+- New UI patterns may require design system review and implementation planning
+
+---
+
+# Open Questions / Future-State
+
+- Should calibration + repair become transactional “service items”?
+- How should multi-tool service management work?
+- What is the long-term checkout/cart model?
+- Should estimate communication become reusable across service flows?
+- Should new patterns be formalized into the design system?
+- How should service types be surfaced internally within OnePoint?
+
+---
+
+# Related Patterns
+
+- SERVICE_SUMMARY_CARD
+- DISCLOSURE_PATTERN
+- ESTIMATE_CONTAINER
+- ACTION_DRAWER
+- SERVICE_OBJECT_MODEL
+
+---
+
+# Screens / References
+
+Recommended:
+- Attach desktop flow screenshots
+- Attach mobile flow screenshots
+- Link associated Figma flows/components
+- Link related OnePoint references
